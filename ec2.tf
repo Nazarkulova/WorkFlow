@@ -1,11 +1,11 @@
 resource "aws_instance" "example"{
-    ami = "ami-00b8917ae86a424c9"
-    instance_type = "t2-micro"
+    ami = "ami-05fb0b8c1424f266b"
+    instance_type = "t3-micro"
 
     tags = {
         name = "git_action"
     }
 
-    }
+ }
 
     
