@@ -1,10 +1,6 @@
-resource "aws_instance" "sample" {
-    ami = "ami-0c2f3d2ee24929520"
-    inst_type = "t2-micro"
-
-    tags {
-        name ="git_cation_instance"
- }
+module "ec2-instance" {
+  source  = "terraform-aws-modules/ec2-instance/aws"
+  version = "5.6.0"
 }
 
     
