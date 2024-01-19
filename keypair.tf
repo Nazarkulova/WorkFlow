@@ -1,4 +1,3 @@
 resource "aws_key_pair" "atyra" {
   key_name   = "atyra-test"
   public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0ONlR5kR8UXgK7mxJplRRSgE3sz46L+oUmDYQwIMIvhrgyNh6qacZCNaP5+YBfQt1rUqBno2JX1Rw5InJ/91ChJIyNboNtsWUndaWDLGnH89QKw4ZUth0Fy9f1Bk2jGAGZaUzAAinitQmrR9qZnIvtYO7Etxuab15LVe8WRRoTSn1q4GSFn0Wko3/33znJaQB+DojJhwjSuRDaruoYrvkOyQyhmuSn5QYlDqfFTq2WwbTsDmliLMwF2dZ5c3ZKuLQKC5pJBrXZM57zSovcOQjPIeG7KEEDyUNEz/Dbv2GmObi5YUDt8keS1fiCYD1GoXzm7xaat1S/pp7jBJk/7Vl atyranazarkulova@Atyras-Air.fios-router.home"
-}
