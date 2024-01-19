@@ -4,6 +4,7 @@ resource "aws_instance" "sample" {
 
     tags {
         name ="git_cation_instance"
+ }
 }
 
     
