@@ -3,7 +3,11 @@ name: Terraform Workflow
 on:
   push:
     branches:
-       - test
+       - '*'
+       - '!main'
+  pull_request:
+    branches:
+      - main
 
 jobs:
   terraform:
@@ -36,7 +40,7 @@ jobs:
       run: terraform plan
 
     - name: Terraform Apply
-      if: github.ref == 'refs/heads/main' && github.atyra == 'push'
-      run: terraform apply -auto-approve -input=false
+      if: github.event_name == 'push'
+      run: terraform apply 
  
     
