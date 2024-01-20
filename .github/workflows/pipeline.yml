@@ -34,7 +34,9 @@ jobs:
 
     - name: Terraform Plan
       run: terraform plan
-    - name: Terraform Apply
-    - run: terraform apply
 
+    - name: Terraform Apply
+      if: github.ref == 'refs/heads/main' && github.atyra == 'push'
+      run: terraform apply -auto-approve -input=false
+ 
     
